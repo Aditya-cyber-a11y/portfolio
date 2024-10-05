@@ -1,0 +1,136 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    
+}
+.opacity{
+    opacity: 0.5;
+}
+/* Layer styling */
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Image styling */
+.layer img {
+    width: 100%;
+    height: auto;
+object-fit: cover;
+;
+}
+
+/* Z-index layering */
+.layer1 {
+    z-index: 10;
+    opacity: 1; /* Adjust opacity to blend layers */
+}
+.layer0{
+    z-index: 10;
+    opacity: 1;
+}
+.photo{
+    opacity: 1;
+}
+.layer2 {
+    left: 0%;
+   height: 800px;
+   width: 1000px;
+   top: 500px;
+    z-index: 10;
+    opacity: 1;
+}
+
+.layer3 {
+ opacity: 1;
+    z-index: 100;
+    
+}
+
+/* Content styling */
+.content {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    text-align: center;
+
+    color: #fff;
+}
+a{
+    font-size: x-large;
+    color: #fff; 
+}
+.content h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    font-size: 1.5em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.photo{
+    opacity: 1;
+}
+.moving-band {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    top :20px;
+    color: black;
+    transform: translateY(-50%);
+    animation: moveBand 5s linear infinite;
+}
+
+@keyframes moveBand {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.moving-band span {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.moving-band2 {
+    margin-top:70px;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    
+    color: black;
+    transform: translateY(-50%);
+    animation: moveBand2 5s linear infinite;
+}
+
+@keyframes moveBand2 {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+.moving-band2 span {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
